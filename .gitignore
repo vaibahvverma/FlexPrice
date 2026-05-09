@@ -41,3 +41,5 @@ vite.config.js
 # env files
 .env.*
 .claude/settings.local.json
+# Storybook build output
+storybook-static/
