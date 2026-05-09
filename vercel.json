@@ -2,9 +2,7 @@
   "outputDirectory": "storybook-static",
   "buildCommand": "npm run build-storybook",
   "installCommand": "npm install",
-  "framework": {
-    "name": "@vercel/static"
-  },
+  "framework": null,
   "headers": [
     {
       "source": "/(.*)",
