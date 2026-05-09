@@ -1,0 +1,19 @@
+{
+  "outputDirectory": "storybook-static",
+  "buildCommand": "npm run build-storybook",
+  "installCommand": "npm install",
+  "framework": {
+    "name": "@vercel/static"
+  },
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
+      ]
+    }
+  ]
+}
