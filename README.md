@@ -439,34 +439,6 @@ npx vitest
 
 **Total: 101 tests passing** (13 files pass, 1 pre-existing file fails due to missing Supabase env vars — unrelated to this library)
 
----
-
-## Building & Deploying
-
-### Build the static Storybook
-
-```bash
-npm run build-storybook
-# Output → storybook-static/
-```
-
-### Deploy to Vercel
-
-1. Go to [vercel.com/new](https://vercel.com/new)
-2. Import this GitHub repository
-3. Set these build settings:
-   - **Framework Preset:** Other
-   - **Build Command:** `npm run build-storybook`
-   - **Output Directory:** `storybook-static`
-   - **Install Command:** `npm install`
-4. Click **Deploy** — done!
-
-Alternatively, use the Vercel CLI:
-
-```bash
-npm i -g vercel
-vercel --prod
-```
 
 ---
 
@@ -524,17 +496,3 @@ src/
 
 ---
 
-## Evaluation Criteria Mapping
-
-| Criterion | Weight | Implementation |
-|-----------|--------|---------------|
-| Component coverage & fidelity | 25% | 16 components matching FlexPrice UI exactly |
-| Storybook quality | 20% | Full `args`/`argTypes`/JSDoc/play functions |
-| Code quality | 20% | TypeScript strict, clean APIs, no `any` in public interfaces |
-| Advanced challenges | 20% | All 3 implemented (A: Zustand, B: virtual, C: query) |
-| Tests | 10% | 101 tests: 6 utility files + 2 component render tests |
-| Deployment & hygiene | 5% | `vercel.json` configured, clean git history |
-
----
-
-*Built with ❤️ for the FlexPrice Frontend Intern Assignment.*
